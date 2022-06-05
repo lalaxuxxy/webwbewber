@@ -1,37 +1,103 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-You can use the [editor on GitHub](https://github.com/lalaxuxxy/webwbewber/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+.column {
+  flex: 25%;
+  padding: 0em;
+  border:.2em solid #000000;
+  background-color:#ccc;
+  
+}
+.relative {
+  position: relative;
+  width: 6em;
+  border: 3px solid #2173ad;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-top: 0em;
+  justify-content: center;
+}
+.p{
+  padding: 1em;
+  padding-top: 0em;
+}
+#chicken{
+  color: #010101;
+ background-color:  #f698e0;
+}
+#beef{
+  color: #ffffff;
+ background-color:  #ff0000;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#sushi{
+  color: #000000;
+  background-color:  #e5ff00;
+}
+@media screen and (min-width:992px){
+ .relative{
+   left: 63%;
+ }
+ .column{
+    margin: 2%;
+  }
+}
+@media screen and (min-width:767px) and (max-width:991px){
+  .column{
+    margin: 5%;
+  }
+  .relative{
+   left: 65%;
+ }
+ #sushi{
+   left: 84%;
+ }
+}
+@media screen and (max-width:766px) {
+.column{
+  margin-bottom:5em;
+  margin: 2em;
+}
+.relative{
+   left: 55%;
+ }
+}
 
-### Markdown
+</style>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+</head>
+<body>
 
-```markdown
-Syntax highlighted code block
+<h2>Our Menu</h2>
+<p><strong>Platillos.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ear.</br></p>
 
-# Header 1
-## Header 2
-### Header 3
+<div class="row">
+  <div class="column">
+    <div class="relative"id="chicken"><p>Chicken</p></div>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+  </div>
+  
+  <div class="column">
+    <div class="relative" id="beef"><p>Beef</p></div>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+  </div>
+  
+  <div class="column">
+    <div class="relative" id="sushi"><p>Sushi</p></div>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+  </div>
+  
+</div>
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lalaxuxxy/webwbewber/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
